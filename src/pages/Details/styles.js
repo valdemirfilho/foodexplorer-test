@@ -64,7 +64,7 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     padding: 1.6rem;
     > .rectangle {
       grid-template-columns: 1fr 3fr;
@@ -115,7 +115,7 @@ export const Content = styled.div`
         padding: 0 0 0 2rem;
         h1 {
           font-weight: 600;
-          font-size: 1.8rem;
+          font-size: clamp(1rem, 1rem + 1.5vw, 3rem);
           line-height: 140%;
         }
 
