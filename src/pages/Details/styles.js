@@ -21,7 +21,7 @@ export const Content = styled.div`
 
   > .rectangle {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas: "a b";
     height: 26rem;
 
@@ -64,7 +64,7 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: 820px) {
+  @media (max-width: 768px) {
     padding: 1.6rem;
     > .rectangle {
       margin-top: 4.4rem;
@@ -73,7 +73,38 @@ export const Content = styled.div`
       div:nth-child(1) {
         img {
           width: 19.1rem;
-          left: -1rem;
+          left: 0rem;
+        }
+      }
+
+      div:nth-child(2) {
+        padding: 0 3rem 0 3rem;
+        justify-content: center;
+        h1 {
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 140%;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 1.6rem;
+    > .rectangle {
+      grid-template-columns: 1fr 1fr;
+      margin-top: 4.4rem;
+      height: 12rem;
+
+      div:nth-child(1) {
+        img {
+          width: 19.1rem;
+          left: rem;
         }
       }
 
