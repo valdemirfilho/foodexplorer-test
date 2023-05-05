@@ -67,19 +67,20 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     padding: 1.6rem;
     > .rectangle {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 1fr 3fr;
       margin-top: 4.4rem;
       height: 12rem;
 
       div:nth-child(1) {
         img {
           width: 19.1rem;
-          left: -1rem;
+          height: 14.9rem;
+          left: -3rem;
         }
       }
 
       div:nth-child(2) {
-        padding: 0 3rem 0 3rem;
+        padding: 0 3rem 0 6rem;
         justify-content: center;
         h1 {
           font-weight: 600;
@@ -96,22 +97,22 @@ export const Content = styled.div`
   }
 
   @media (max-width: 480px) {
-    padding: 1.6rem;
+    padding-left: 3.6rem;
     > .rectangle {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 2fr;
       margin-top: 4.4rem;
       height: 12rem;
 
       div:nth-child(1) {
         img {
           width: 19.1rem;
-          left: -1rem;
+          height: 14.9rem;
+          left: -3rem;
         }
       }
 
       div:nth-child(2) {
-        padding: 0;
-        justify-content: center;
+        padding: 0 0 0 2rem;
         h1 {
           font-weight: 600;
           font-size: 1.8rem;
