@@ -98,6 +98,7 @@ export const Content = styled.div`
   @media (max-width: 480px) {
     padding: 1.6rem;
     > .rectangle {
+      grid-template-columns: 1fr 1fr;
       margin-top: 4.4rem;
       height: 12rem;
 
