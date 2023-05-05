@@ -69,6 +69,11 @@ export const MobileContainer = styled.div`
       font-size: 2.4rem;
       line-height: 3.4rem;
       list-style-type: none;
+
+      border-bottom: solid ${({ theme }) => theme.COLORS.DARK_1000} 2px;
+      padding-bottom: 1rem;
+      width: 100%;
+
       a {
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
       }
