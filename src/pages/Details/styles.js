@@ -74,7 +74,7 @@ export const Content = styled.div`
       div:nth-child(1) {
         img {
           width: 19.1rem;
-          left: 0rem;
+          left: -1rem;
         }
       }
 
@@ -105,7 +105,7 @@ export const Content = styled.div`
       div:nth-child(1) {
         img {
           width: 19.1rem;
-          left: rem;
+          left: -1rem;
         }
       }
 
