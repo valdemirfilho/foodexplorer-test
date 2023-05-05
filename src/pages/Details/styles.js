@@ -21,7 +21,7 @@ export const Content = styled.div`
 
   > .rectangle {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "a b";
     height: 26rem;
 
@@ -67,6 +67,7 @@ export const Content = styled.div`
   @media (max-width: 768px) {
     padding: 1.6rem;
     > .rectangle {
+      grid-template-columns: 1fr 2fr;
       margin-top: 4.4rem;
       height: 12rem;
 
@@ -97,7 +98,6 @@ export const Content = styled.div`
   @media (max-width: 480px) {
     padding: 1.6rem;
     > .rectangle {
-      grid-template-columns: 1fr 1fr;
       margin-top: 4.4rem;
       height: 12rem;
 
