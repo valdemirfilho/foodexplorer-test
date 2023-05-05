@@ -64,7 +64,7 @@ export const Content = styled.div`
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 820px) {
     padding: 1.6rem;
     > .rectangle {
       margin-top: 4.4rem;
