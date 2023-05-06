@@ -42,9 +42,14 @@ export const Container = styled.div`
       rgba(0, 10, 15, 0.272541) 0%,
       #000a0f 100%
     );
+    transform: matrix(-1, 0, 0, 1, 0, 0);
     border: none;
     color: white;
     width: 22.4rem;
+
+    svg {
+      rotate: 180deg;
+    }
   }
 
   @media (max-width: 820px) {
