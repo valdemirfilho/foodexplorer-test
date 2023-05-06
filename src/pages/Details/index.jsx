@@ -1,11 +1,21 @@
 import { Container, Content } from "./styles";
 import { Header } from "../../Components/Header";
 import { Input } from "../../Components/Input";
-import { FiSearch } from "react-icons/fi";
+
+import { FiSearch, FiEdit2 } from "react-icons/fi";
 
 import macaronImage from "../../assets/macaron.png";
+import { Carrosel } from "../../Components/Carrosel";
 
 export function Details() {
+  const data = {
+    name: "Spaguetti Gambe",
+    description: "Massa fresca com camarões e pesto.",
+    price: "32,97",
+  };
+
+  const carroselTest = [data, data, data, data, data, data, data];
+
   return (
     <Container>
       <Header>
@@ -25,6 +35,7 @@ export function Details() {
             <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
           </div>
         </div>
+        <Carrosel dishesArray={carroselTest} />
       </Content>
     </Container>
   );

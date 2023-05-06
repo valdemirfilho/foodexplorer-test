@@ -107,7 +107,6 @@ export const DesktopContainer = styled.div`
   justify-content: center;
   gap: 3.2rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
-  padding-inline: 4rem;
 
   div > input {
     width: 58rem;

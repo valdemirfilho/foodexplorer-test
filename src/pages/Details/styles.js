@@ -17,6 +17,9 @@ export const Content = styled.div`
   grid-area: content;
 
   display: flex;
+  flex-direction: column;
+  align-items: center;
+
   justify-content: center;
 
   > .rectangle {
