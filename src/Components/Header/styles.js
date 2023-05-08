@@ -7,9 +7,12 @@ export const MobileContainer = styled.div`
   align-items: end;
   gap: 1.6rem;
   padding: 0 0 2.4rem 2.8rem;
-  overflow: hidden;
+  height: 114px;
 
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
+
+  position: fixed;
+  width: 100%;
 
   h1 {
     font-family: "Roboto";
@@ -17,13 +20,30 @@ export const MobileContainer = styled.div`
     line-height: 2.5rem;
     font-size: 2.1rem;
   }
+  > .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.6rem;
+    button {
+      display: flex;
+
+      background-color: transparent;
+      border: none;
+
+      svg {
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
+      }
+    }
+  }
 
   > .nav-elements {
     display: block;
     padding: 3.6rem 2.8rem 0;
     position: absolute;
-    z-index: 1;
-
+    z-index: 99;
     width: 0;
 
     top: 11.4rem;
@@ -52,9 +72,13 @@ export const MobileContainer = styled.div`
   > .nav-elements.active {
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    overflow: hidden;
+
+    z-index: 100;
     width: 100%;
-    height: 88vh;
-    top: 11.4rem;
+    height: 100vh;
+    margin-top: 11.4rem;
+    top: 0;
     left: 0;
 
     text-decoration: none;
@@ -75,24 +99,6 @@ export const MobileContainer = styled.div`
       width: 100%;
 
       a {
-        color: ${({ theme }) => theme.COLORS.LIGHT_100};
-      }
-    }
-  }
-  > .nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    gap: 1.6rem;
-    button {
-      display: flex;
-
-      background-color: transparent;
-      border: none;
-
-      svg {
         color: ${({ theme }) => theme.COLORS.LIGHT_100};
       }
     }
