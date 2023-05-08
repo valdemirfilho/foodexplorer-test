@@ -1,11 +1,11 @@
 import { useRef } from "react";
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 import { Container } from "./styles";
 import { Card } from "../Card";
 import { FiEdit2 } from "react-icons/fi";
 
-export function Carrosel({ dishesArray }) {
+export function Carrosel({ dishesArray, title }) {
   const carousel = useRef(null);
 
   const handleLeftClick = (e) => {
@@ -21,13 +21,13 @@ export function Carrosel({ dishesArray }) {
 
   return (
     <Container>
+      <h1>{title}</h1>
       <button className="leftBtn" onClick={handleLeftClick}>
-        <MdKeyboardArrowLeft size={50} />
+        <MdKeyboardArrowRight size={50} />
       </button>
       <button className="rightBtn" onClick={handleRightClick}>
         <MdKeyboardArrowRight size={50} />
       </button>
-
       <div className="carousel" ref={carousel}>
         {dishesArray.map((dish) => (
           <Card icon={FiEdit2} data={dish}></Card>

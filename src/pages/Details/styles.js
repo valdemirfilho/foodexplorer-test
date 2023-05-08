@@ -3,13 +3,14 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: grid;
 
-  grid-template-rows: 137px auto;
+  grid-template-rows: 137px auto 77px;
   grid-template-areas:
     "header"
-    "content";
+    "content"
+    "footer";
 
   @media (max-width: 820px) {
-    grid-template-rows: 114px auto;
+    grid-template-rows: 114px auto 77px;
   }
 `;
 
@@ -28,7 +29,7 @@ export const Content = styled.div`
     grid-template-areas: "a b";
     height: 26rem;
 
-    margin-top: 17.2rem;
+    margin: 17.2rem 0 10rem 0;
     border-radius: 0.8rem;
     background: linear-gradient(180deg, #091e26 0%, #00131c 100%);
 

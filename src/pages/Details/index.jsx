@@ -1,5 +1,7 @@
 import { Container, Content } from "./styles";
 import { Header } from "../../Components/Header";
+import { Footer } from "../../Components/Footer";
+
 import { Input } from "../../Components/Input";
 
 import { FiSearch, FiEdit2 } from "react-icons/fi";
@@ -35,8 +37,11 @@ export function Details() {
             <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
           </div>
         </div>
-        <Carrosel dishesArray={carroselTest} />
+        <Carrosel title={"Refeição"} dishesArray={carroselTest} />
+        <Carrosel title={"Sobremesa"} dishesArray={carroselTest} />
+        <Carrosel title={"Bebidas"} dishesArray={carroselTest} />
       </Content>
+      <Footer />
     </Container>
   );
 }

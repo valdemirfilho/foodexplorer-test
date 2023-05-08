@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  margin-top: 10rem; //TEMPORARIO
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 1.5rem;
 
   padding: 5.55rem 6.4rem;

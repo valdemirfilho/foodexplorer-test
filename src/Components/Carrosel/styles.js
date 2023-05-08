@@ -3,12 +3,22 @@ import styled from "styled-components";
 export const Container = styled.div`
   position: relative;
 
+  > h1 {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+
+    margin-bottom: 2.3rem;
+  }
+
   .carousel {
     display: flex;
     gap: 2.7rem;
     max-width: 1120px;
+    margin-bottom: 4.8rem;
     overflow-x: scroll;
     scroll-behavior: smooth;
+
     ::-webkit-scrollbar {
       width: 0px;
     }
@@ -17,7 +27,7 @@ export const Container = styled.div`
   .rightBtn {
     position: absolute;
     z-index: 2;
-    top: 9.8rem;
+
     right: 0rem;
     height: 49.8rem;
 
@@ -34,7 +44,7 @@ export const Container = styled.div`
   .leftBtn {
     position: absolute;
     z-index: 2;
-    top: 9.8rem;
+
     left: 0rem;
     height: 49.8rem;
     background: linear-gradient(
@@ -46,10 +56,6 @@ export const Container = styled.div`
     border: none;
     color: white;
     width: 22.4rem;
-
-    svg {
-      rotate: 180deg;
-    }
   }
 
   @media (max-width: 820px) {
@@ -64,6 +70,13 @@ export const Container = styled.div`
   }
 
   @media (max-width: 480px) {
+    > h1 {
+      font-weight: 500;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+
+      margin-bottom: 2.3rem;
+    }
     .carousel {
       gap: 1.7rem;
       max-width: 380px;
