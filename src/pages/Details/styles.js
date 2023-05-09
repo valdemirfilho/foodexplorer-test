@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: grid;
+  height: 100vh;
 
-  grid-template-rows: 137px auto 77px;
+  grid-template-rows: 100px auto 77px;
   grid-template-areas:
     "header"
     "content"
@@ -16,12 +17,10 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   grid-area: content;
-  z-index: -1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
-  justify-content: center;
+  overflow-y: scroll;
+  z-index: 1;
+  padding-inline: 35rem;
 
   > .rectangle {
     display: grid;

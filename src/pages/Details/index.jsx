@@ -4,7 +4,7 @@ import { Footer } from "../../Components/Footer";
 
 import { Input } from "../../Components/Input";
 
-import { FiSearch, FiEdit2 } from "react-icons/fi";
+import { FiSearch } from "react-icons/fi";
 
 import macaronImage from "../../assets/macaron.png";
 import { Carrosel } from "../../Components/Carrosel";

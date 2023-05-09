@@ -16,7 +16,7 @@ export const Container = styled.div`
     gap: 2.7rem;
     max-width: 1120px;
     margin-bottom: 4.8rem;
-    overflow-x: scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
 
     ::-webkit-scrollbar {

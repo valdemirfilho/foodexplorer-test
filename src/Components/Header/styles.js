@@ -8,9 +8,10 @@ export const MobileContainer = styled.div`
   gap: 1.6rem;
   padding: 0 0 2.4rem 2.8rem;
   height: 114px;
-
+  z-index: 10;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
+  display: ${({ isHide }) => (isHide ? "none" : "flex")};
   position: fixed;
   width: 100%;
 
@@ -72,8 +73,6 @@ export const MobileContainer = styled.div`
   > .nav-elements.active {
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    overflow: hidden;
-
     z-index: 100;
     width: 100%;
     height: 100vh;
@@ -107,6 +106,7 @@ export const MobileContainer = styled.div`
 
 export const DesktopContainer = styled.div`
   grid-area: header;
+  padding-inline: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
