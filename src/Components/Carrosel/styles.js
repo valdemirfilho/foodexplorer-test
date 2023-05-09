@@ -16,7 +16,7 @@ export const Container = styled.div`
     gap: 2.7rem;
     max-width: 1120px;
     margin-bottom: 4.8rem;
-    overflow: hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
 
     ::-webkit-scrollbar {
@@ -70,13 +70,6 @@ export const Container = styled.div`
   }
 
   @media (max-width: 480px) {
-    > h1 {
-      font-weight: 500;
-      font-size: 1.8rem;
-      line-height: 2.5rem;
-
-      margin-bottom: 2.3rem;
-    }
     .carousel {
       gap: 1.7rem;
       max-width: 380px;

@@ -34,14 +34,4 @@ button, a {
 button:hover, a:hover {
  filter: brightness(0.9);
 }
-
-&::-webkit-scrollbar {
-        width: 0.8rem;
-        border: none
-    }
-
-&::-webkit-scrollbar-thumb {
-  background-color: ${({ theme }) => theme.COLORS.TOMATO_100}; 
-  border-radius: 10rem; 
-}
 `;
