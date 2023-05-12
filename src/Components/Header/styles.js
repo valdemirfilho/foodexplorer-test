@@ -11,7 +11,6 @@ export const MobileContainer = styled.div`
   z-index: 10;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
-  display: ${({ isHide }) => (isHide ? "none" : "flex")};
   position: fixed;
   width: 100%;
 
@@ -110,23 +109,28 @@ export const DesktopContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 3.2rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
-  div > input {
+  .wrapper {
+    display: flex;
+    gap: 2.4rem;
+
+    button:nth-child(2) {
+      border: none;
+      background-color: transparent;
+      svg {
+        color: ${({ theme }) => theme.COLORS.LIGHT_100};
+      }
+    }
+  }
+
+  > div > input {
     width: 58rem;
   }
 
   .buttonWrapper {
     width: 21.6rem;
-  }
-  > button {
-    background-color: transparent;
-    border: none;
-
-    svg {
-      color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    }
   }
 `;

@@ -1,15 +1,15 @@
 import { Container, Content } from "./styles";
-import { Header } from "../../Components/Header";
-import { Footer } from "../../Components/Footer";
+import { Header } from "../../../Components/Header";
+import { Footer } from "../../../Components/Footer";
 
-import { Input } from "../../Components/Input";
+import { Input } from "../../../Components/Input";
 
 import { FiSearch } from "react-icons/fi";
 
-import macaronImage from "../../assets/macaron.png";
-import { Carrosel } from "../../Components/Carrosel";
+import macaronImage from "../../../assets/macaron.png";
+import { Carrosel } from "../../../Components/Carrosel";
 
-export function Details() {
+export function Home() {
   const data = {
     name: "Spaguetti Gambe",
     description: "Massa fresca com camarões e pesto.",

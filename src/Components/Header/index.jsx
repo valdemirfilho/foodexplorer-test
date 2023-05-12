@@ -72,16 +72,17 @@ export function Header({ children, isHide = false }) {
   ) : (
     <DesktopContainer>
       <img src={logoAdminDesktop} alt="" />
-      <div className="nav"></div>
+
       {children}
 
-      <div className="buttonWrapper">
-        <Button title={"Novo Prato"}></Button>
+      <div className="wrapper">
+        <div className="buttonWrapper">
+          <Button title={"Novo Prato"}></Button>
+        </div>
+        <button>
+          <RxExit size={24} />
+        </button>
       </div>
-
-      <button>
-        <RxExit size={24} />
-      </button>
     </DesktopContainer>
   );
 }
