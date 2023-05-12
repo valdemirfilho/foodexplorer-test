@@ -21,6 +21,13 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 0 3.2rem;
 
+  @media (min-width: 820px) {
+    align-items: center;
+  }
+`;
+
+export const Form = styled.form`
+  color: ${({ theme }) => theme.COLORS.LIGHT_400};
   > h1 {
     margin: 2.4rem 0;
     font-style: normal;
@@ -29,14 +36,6 @@ export const Content = styled.div`
     line-height: 140%;
     display: flex;
   }
-
-  @media (min-width: 820px) {
-    align-items: center;
-  }
-`;
-
-export const Form = styled.form`
-  color: ${({ theme }) => theme.COLORS.LIGHT_400};
 
   input,
   select,
@@ -80,7 +79,7 @@ export const Form = styled.form`
   }
 
   @media (min-width: 820px) {
-    > div:nth-child(1) {
+    > div:nth-child(2) {
       display: flex;
       gap: 4.6rem;
 

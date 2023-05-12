@@ -11,8 +11,9 @@ export function New() {
     <Container>
       <Header />
       <Content>
-        <h1>Novo Prato</h1>
         <Form>
+          <h1>Novo Prato</h1>
+
           <div>
             <Image>
               <p>Imagem</p>
@@ -38,10 +39,12 @@ export function New() {
             </label>
           </div>
 
-          <label htmlFor="price">
-            Preço
-            <input type="text" placeholder="R$00,00" />
-          </label>
+          <div>
+            <label htmlFor="price">
+              Preço
+              <input type="text" placeholder="R$00,00" />
+            </label>
+          </div>
 
           <label htmlFor="description">
             Descrição
