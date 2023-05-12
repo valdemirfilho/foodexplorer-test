@@ -17,7 +17,9 @@ export const Container = styled.div`
 export const Content = styled.div`
   grid-area: content;
 
-  padding: 0 12.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3.2rem;
 
   > h1 {
     margin: 2.4rem 0;
@@ -25,10 +27,11 @@ export const Content = styled.div`
     font-weight: 500;
     font-size: 3.2rem;
     line-height: 140%;
+    display: flex;
   }
 
-  @media (max-width: 820px) {
-    padding: 0 3.2rem;
+  @media (min-width: 820px) {
+    align-items: center;
   }
 `;
 
@@ -60,9 +63,11 @@ export const Form = styled.form`
     font-size: 1.6rem;
   }
 
-  label {
+  label,
+  .imgLabel {
     display: flex;
     flex-direction: column;
+
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -73,17 +78,37 @@ export const Form = styled.form`
   button {
     margin-bottom: 5.4rem;
   }
+
+  @media (min-width: 820px) {
+    > div:nth-child(1) {
+      display: flex;
+      gap: 4.6rem;
+
+      align-items: center;
+
+      #name {
+        width: 46rem;
+      }
+
+      #category {
+        width: 36rem;
+      }
+    }
+  }
 `;
 
 export const Image = styled.div`
   > .imageLabel {
     display: flex;
     flex-direction: row;
-    padding: 1.6rem 3.2rem;
-    margin: 1.6rem 0 2.4rem 0;
-    background-color: ${({ theme }) => theme.COLORS.DARK_800};
+    align-items: center;
+    gap: 1rem;
 
     border-radius: 0.8rem;
+    padding: 1.3rem 1.4rem;
+    margin: 1.6rem 0 2.4rem 0;
+
+    background-color: ${({ theme }) => theme.COLORS.DARK_800};
   }
 
   input {

@@ -15,7 +15,7 @@ export function New() {
         <Form>
           <div>
             <Image>
-              <spam>Imagem</spam>
+              <p>Imagem</p>
               <label className="imageLabel" htmlFor="image">
                 <FiUpload size={20} />
                 <span>Selecione a imagem</span>
