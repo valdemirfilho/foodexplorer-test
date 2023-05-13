@@ -1,8 +1,9 @@
 import { FiUpload } from "react-icons/fi";
-
+import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container, Content, Form, Image } from "./styles";
 import { Header } from "../../../Components/Header";
 import { Footer } from "../../../Components/Footer";
+import { NewTag } from "../../../Components/NewTag";
 
 import { Button } from "../../../Components/Button";
 
@@ -12,6 +13,9 @@ export function New() {
       <Header />
       <Content>
         <Form>
+          <a href="">
+            <MdKeyboardArrowLeft /> voltar
+          </a>
           <h1>Novo Prato</h1>
 
           <div>
@@ -40,10 +44,20 @@ export function New() {
           </div>
 
           <div>
-            <label htmlFor="price">
-              Preço
-              <input type="text" placeholder="R$00,00" />
-            </label>
+            <div>
+              <p>Ingredientes</p>
+              <div className="ingredientPlace">
+                <NewTag isNew placeholder={"Adicionar"} />
+                <NewTag value={"Pão Naan"} />
+              </div>
+            </div>
+
+            <div>
+              <label htmlFor="price">
+                Preço
+                <input type="text" placeholder="R$00,00" />
+              </label>
+            </div>
           </div>
 
           <label htmlFor="description">

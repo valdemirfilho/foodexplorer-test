@@ -28,6 +28,21 @@ export const Content = styled.div`
 
 export const Form = styled.form`
   color: ${({ theme }) => theme.COLORS.LIGHT_400};
+  a {
+    margin-top: 1.1rem;
+    display: flex;
+    align-items: center;
+
+    color: ${({ theme }) => theme.COLORS.LIGHT_300};
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 140%;
+
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
   > h1 {
     margin: 2.4rem 0;
     font-style: normal;
@@ -37,19 +52,22 @@ export const Form = styled.form`
     display: flex;
   }
 
-  input,
+  > input,
+  label > input,
   select,
   textarea {
     border: none;
     border-radius: 0.8rem;
-    padding: 1.3rem 1.4rem;
+    padding: 1rem 1.4rem;
     margin: 1.6rem 0 2.4rem 0;
   }
 
-  input,
-  textarea {
+  > input,
+  label > input,
+  textarea,
+  .ingredientPlace {
     background-color: ${({ theme }) => theme.COLORS.DARK_800};
-    color: ${({ theme }) => theme.COLORS.LIGHT_400};
+    color: ${({ theme }) => theme.COLORS.LIGHT_600};
   }
 
   input::placeholder {
@@ -74,16 +92,34 @@ export const Form = styled.form`
     line-height: 100%;
   }
 
-  button {
+  > button {
     margin-bottom: 5.4rem;
   }
 
-  @media (min-width: 820px) {
-    > div:nth-child(2) {
-      display: flex;
-      gap: 4.6rem;
+  .ingredientPlace {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: none;
+    border-radius: 0.8rem;
 
+    margin: 1.6rem 0 2.4rem 0;
+  }
+
+  @media (min-width: 820px) {
+    a {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 140%;
+      svg {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    > div:nth-child(3) {
+      display: flex;
       align-items: center;
+      gap: 4.6rem;
 
       #name {
         width: 46rem;
@@ -92,6 +128,21 @@ export const Form = styled.form`
       #category {
         width: 36rem;
       }
+    }
+
+    > div:nth-child(4) {
+      display: flex;
+      align-items: center;
+      gap: 4.6rem;
+
+      .ingredientPlace {
+        width: 83rem;
+      }
+    }
+
+    > button {
+      width: 17.2rem;
+      margin-left: 94rem;
     }
   }
 `;
