@@ -51,20 +51,33 @@ export const Content = styled.div`
       margin-bottom: 2.4rem;
     }
 
-    p {
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 1.6rempx;
-      line-height: 140%;
+    > div {
+      > p {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.6rempx;
+        line-height: 140%;
+        margin-bottom: 2.4rem;
+      }
 
-      margin-bottom: 2.4rem;
+      button {
+        margin: 4.8rem 0;
+      }
     }
+  }
+
+  .tagPlace {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media (min-width: 820px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     align-items: center;
 
     > header {
@@ -91,7 +104,7 @@ export const Content = styled.div`
         width: 35rem;
         height: 35rem;
       }
-      div {
+      > div {
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -100,7 +113,8 @@ export const Content = styled.div`
       p {
         text-align: left;
       }
-      button {
+
+      div > button {
         width: 13.1rem;
       }
     }
