@@ -17,7 +17,6 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   grid-area: content;
-
   padding: 0 5.6rem;
   > header {
     a {
@@ -69,7 +68,8 @@ export const Content = styled.div`
     align-items: center;
 
     > header {
-      width: 112rem;
+      width: 1120px;
+
       a {
         font-weight: 700;
         font-size: 2.4;
@@ -103,6 +103,12 @@ export const Content = styled.div`
       button {
         width: 13.1rem;
       }
+    }
+  }
+
+  @media (min-width: 820px) and (max-width: 1210px) {
+    > header {
+      width: 700px;
     }
   }
 `;
