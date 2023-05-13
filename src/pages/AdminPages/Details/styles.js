@@ -18,6 +18,7 @@ export const Container = styled.div`
 export const Content = styled.div`
   grid-area: content;
   width: 100%;
+  padding: 0 5.6rem;
   > div:nth-child(1) {
     a {
       margin: 4.2rem 0 3.2rem 0;
