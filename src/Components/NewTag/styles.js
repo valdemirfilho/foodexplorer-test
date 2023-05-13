@@ -5,6 +5,7 @@ export const Container = styled.div`
   align-items: center;
   margin: 0.8rem;
   border-radius: 1rem;
+  width: fit-content;
 
   background-color: ${({ theme, isNew }) =>
     isNew ? "transparent" : theme.COLORS.LIGHT_600};
@@ -25,8 +26,8 @@ export const Container = styled.div`
     background: none;
     border: none;
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
-    max-width: 15rem;
     height: 3.2rem;
+    width: 11rem;
     padding: 0.8rem;
   }
 

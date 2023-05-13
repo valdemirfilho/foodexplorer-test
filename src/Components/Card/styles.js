@@ -26,6 +26,10 @@ export const Container = styled.div`
     color: white;
   }
 
+  img {
+    width: 17.6rem;
+  }
+
   .disheName {
     font-weight: 700;
     font-size: 2.4rem;
