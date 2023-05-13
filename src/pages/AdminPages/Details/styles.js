@@ -17,9 +17,9 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   grid-area: content;
-  width: 100%;
+
   padding: 0 5.6rem;
-  > div:nth-child(1) {
+  > header {
     a {
       margin: 4.2rem 0 3.2rem 0;
       display: flex;
@@ -66,13 +66,13 @@ export const Content = styled.div`
   @media (min-width: 820px) {
     display: flex;
     flex-direction: column;
-    padding: 0 17rem;
+    align-items: center;
 
-    > div:nth-child(1) {
-      width: 100%;
+    > header {
+      width: 112rem;
       a {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 2.4;
         line-height: 140%;
       }
 
@@ -83,6 +83,7 @@ export const Content = styled.div`
     }
 
     .DisheInfo {
+      max-width: 112rem;
       flex-direction: row;
       gap: 4.7rem;
 

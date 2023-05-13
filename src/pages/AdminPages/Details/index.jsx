@@ -12,11 +12,11 @@ export function Details() {
     <Container>
       <Header />
       <Content>
-        <div>
+        <header>
           <a href="">
             <MdKeyboardArrowLeft /> voltar
           </a>
-        </div>
+        </header>
 
         <div className="DisheInfo">
           <img src={disheImg} alt="Imagem do Prato" />
