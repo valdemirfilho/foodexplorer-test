@@ -40,7 +40,7 @@ export const MobileContainer = styled.div`
   }
 
   > .nav-elements {
-    display: block;
+    visibility: hidden;
     padding: 3.6rem 2.8rem 0;
     position: absolute;
     z-index: 99;
@@ -70,6 +70,7 @@ export const MobileContainer = styled.div`
     }
   }
   > .nav-elements.active {
+    visibility: visible;
     background-color: ${({ theme }) => theme.COLORS.DARK_600};
     color: ${({ theme }) => theme.COLORS.LIGHT_100};
     z-index: 100;
