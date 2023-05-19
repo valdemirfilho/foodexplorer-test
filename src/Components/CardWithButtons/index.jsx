@@ -3,11 +3,14 @@ import dishImg from "../../assets/dish.png";
 import { Button } from "../Button";
 
 export function CardWithButtons({ icon: Icon, data, onClick, ...rest }) {
+  function handleIncluir() {
+    console.log("Cliquei em incluir");
+  }
   return (
     <Container>
       <button onClick={onClick}>{Icon && <Icon size={24} />}</button>
 
-      <img src={dishImg} alt="" />
+      <img src={dishImg} alt="Imagem do prato" />
       <p className="disheName">{data.name}</p>
       <span className="description">{data.description}</span>
       <span className="price">{`R$${data.price}`}</span>

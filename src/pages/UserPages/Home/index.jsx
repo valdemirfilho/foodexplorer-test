@@ -37,9 +37,9 @@ export function Home() {
             <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
           </div>
         </div>
-        <UserCarrosel title={"Refeição"} dishesArray={carroselTest} />
+        <UserCarrosel title={"Entrada"} dishesArray={carroselTest} />
+        <UserCarrosel title={"Prato Principal"} dishesArray={carroselTest} />
         <UserCarrosel title={"Sobremesa"} dishesArray={carroselTest} />
-        <UserCarrosel title={"Bebidas"} dishesArray={carroselTest} />
       </Content>
       <Footer />
     </Container>
