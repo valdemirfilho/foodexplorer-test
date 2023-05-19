@@ -3,9 +3,6 @@ import dishImg from "../../assets/dish.png";
 import { Button } from "../Button";
 
 export function CardWithButtons({ icon: Icon, data, onClick, ...rest }) {
-  function handleIncluir() {
-    console.log("Cliquei em incluir");
-  }
   return (
     <Container>
       <button onClick={onClick}>{Icon && <Icon size={24} />}</button>
