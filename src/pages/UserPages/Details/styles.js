@@ -91,7 +91,7 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 4.8rem;
+    margin: 4.8rem 0;
     gap: 1.6rem;
     > button {
       width: max-content;
