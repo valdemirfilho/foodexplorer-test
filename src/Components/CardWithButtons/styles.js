@@ -51,6 +51,7 @@ export const Container = styled.div`
 
   .btnQuantity {
     display: flex;
+    justify-content: center;
     gap: 1.4rem;
     input {
       width: 2.4rem;
@@ -89,7 +90,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 820px) {
-    padding: 8rem 6rem;
+    padding: 2.4rem 6rem;
 
     .description {
       display: none;
@@ -98,10 +99,16 @@ export const Container = styled.div`
     img {
       width: 14.14rem;
     }
+
+    .btnWrapper {
+      flex-direction: column;
+      > button {
+        width: 16.2rem;
+      }
+    }
   }
 
   @media (max-width: 480px) {
-    padding: 7rem 6rem;
     .disheName {
       font-weight: 500;
       font-size: 1.4rem;
@@ -113,7 +120,7 @@ export const Container = styled.div`
 
     .price {
       font-weight: 400;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
       line-height: 1.6rem;
     }
 
