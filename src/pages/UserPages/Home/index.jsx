@@ -1,5 +1,5 @@
 import { Container, Content } from "./styles";
-import { Header } from "../../../Components/Header";
+import { Header } from "../../../Components/UserHeader";
 import { Footer } from "../../../Components/Footer";
 
 import { Input } from "../../../Components/Input";
