@@ -1,6 +1,6 @@
 import { Container, Form } from "./styles";
 import { FiMail, FiLock, FiUser } from "react-icons/fi";
-
+import { Button } from "../../../components/Button";
 import { Input } from "../../../components/Input";
 import logoDesktop from "../../../assets/logoDesktop.png";
 
@@ -20,22 +20,23 @@ export function SignUp() {
               type="text"
               icon={FiUser}
               placeholder="Exemplo: Maria da Silva"
-              id="name"
+              id={"name"}
             />
             <label htmlFor="email">Email</label>
             <Input
               type="email"
               icon={FiMail}
               placeholder="Exemplo: exemplo@exemplo.com.br"
-              id="email"
+              id={"email"}
             />
             <label htmlFor="password">Senha</label>
             <Input
               type="password"
               icon={FiLock}
               placeholder="No mínimo 6 caracteres"
-              id="password"
+              id={"password"}
             />
+            <Button title={"Entrar"} />
           </div>
 
           <a href=""> Já tenho uma conta</a>
