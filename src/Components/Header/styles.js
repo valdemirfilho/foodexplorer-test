@@ -110,7 +110,7 @@ export const DesktopContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   gap: 3.2rem;
   background-color: ${({ theme }) => theme.COLORS.DARK_600};
 
