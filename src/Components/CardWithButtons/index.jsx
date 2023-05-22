@@ -7,7 +7,7 @@ export function CardWithButtons({ icon: Icon, data, onClick, ...rest }) {
     <Container>
       <button onClick={onClick}>{Icon && <Icon size={24} />}</button>
 
-      <img src={dishImg} alt="" />
+      <img src={dishImg} alt="Imagem do prato" />
       <p className="disheName">{data.name}</p>
       <span className="description">{data.description}</span>
       <span className="price">{`R$${data.price}`}</span>

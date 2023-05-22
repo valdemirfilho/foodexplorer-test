@@ -29,7 +29,7 @@ export const Container = styled.div`
     z-index: 2;
 
     right: 0rem;
-    height: 48rem;
+    height: 49rem;
 
     background: linear-gradient(
       90deg,
@@ -46,7 +46,7 @@ export const Container = styled.div`
     z-index: 2;
 
     left: 0rem;
-    height: 48rem;
+    height: 49rem;
 
     background: linear-gradient(
       90deg,
