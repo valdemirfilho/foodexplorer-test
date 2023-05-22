@@ -1,9 +1,9 @@
 import { Container, Content } from "./styles";
-import { Header } from "../../../Components/Header";
-import { Footer } from "../../../Components/Footer";
-import { Tag } from "../../../Components/Tag";
-import { Button } from "../../../Components/Button";
-import { Input } from "../../../Components/Input";
+import { Header } from "../../../components/Header";
+import { Footer } from "../../../components/Footer";
+import { Tag } from "../../../components/Tag";
+import { Button } from "../../../components/Button";
+import { Input } from "../../../components/Input";
 
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { TbReceipt } from "react-icons/tb";

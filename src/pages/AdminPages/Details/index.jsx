@@ -1,10 +1,10 @@
 import { Container, Content } from "./styles";
-import { Header } from "../../../Components/Header";
-import { Footer } from "../../../Components/Footer";
-import { Tag } from "../../../Components/Tag";
+import { Header } from "../../../components/Header";
+import { Footer } from "../../../components/Footer";
+import { Tag } from "../../../components/Tag";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 
-import { Button } from "../../../Components/Button";
+import { Button } from "../../../components/Button";
 
 import disheImg from "../../../assets/dish.png";
 

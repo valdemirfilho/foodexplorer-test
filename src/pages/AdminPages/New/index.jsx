@@ -1,11 +1,11 @@
 import { FiUpload } from "react-icons/fi";
 import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Container, Content, Form, Image } from "./styles";
-import { Header } from "../../../Components/Header";
-import { Footer } from "../../../Components/Footer";
-import { NewTag } from "../../../Components/NewTag";
+import { Header } from "../../../components/Header";
+import { Footer } from "../../../components/Footer";
+import { NewTag } from "../../../components/NewTag";
 
-import { Button } from "../../../Components/Button";
+import { Button } from "../../../components/Button";
 
 export function New() {
   return (

@@ -1,7 +1,7 @@
 import { FiMail, FiLock } from "react-icons/fi";
 import { Container, Form } from "./styles";
-import { Input } from "../../../Components/Input";
-import { Button } from "../../../Components/Button";
+import { Input } from "../../../components/Input";
+import { Button } from "../../../components/Button";
 import logoDesktop from "../../../assets/logoDesktop.png";
 
 export function SignIn() {
@@ -28,7 +28,7 @@ export function SignIn() {
               placeholder="No mínimo 6 caracteres"
               id={"password"}
             />
-            <Button title={"Entrar"} />
+            // <Button title={"Entrar"} />
           </div>
 
           <a to="/register"> Criar Conta</a>

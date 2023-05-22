@@ -1,13 +1,13 @@
 import { Container, Content } from "./styles";
-import { Header } from "../../../Components/UserHeader";
-import { Footer } from "../../../Components/Footer";
+import { Header } from "../../../components/UserHeader";
+import { Footer } from "../../../components/Footer";
 
-import { Input } from "../../../Components/Input";
+import { Input } from "../../../components/Input";
 
 import { FiSearch } from "react-icons/fi";
 
 import macaronImage from "../../../assets/macaron.png";
-import { UserCarrosel } from "../../../Components/UserCarrosel";
+import { UserCarrosel } from "../../../components/UserCarrosel";
 
 export function Home() {
   const data = {
