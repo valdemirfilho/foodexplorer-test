@@ -1,6 +1,6 @@
 import { Container, Form } from "./styles";
 import { FiMail, FiLock, FiUser } from "react-icons/fi";
-import { Button } from "../../../components/Button";
+import { Button } from "../../../components/Button/index";
 import { Input } from "../../../components/Input";
 import logoDesktop from "../../../assets/logoDesktop.png";
 
