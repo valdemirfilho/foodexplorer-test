@@ -15,6 +15,7 @@ export function SignIn() {
           <h2>Faça o Login</h2>
           <div className="input-wrapper">
             <label htmlFor="email">Email</label>
+            <Input></Input>
             <Input
               type="email"
               icon={FiMail}
