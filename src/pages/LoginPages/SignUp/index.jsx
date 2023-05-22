@@ -1,7 +1,7 @@
 import { Container, Form } from "./styles";
-import { Input } from "../../../components/Input";
 import { FiMail, FiLock, FiUser } from "react-icons/fi";
 import { Button } from "../../../components/Button";
+import { Input } from "../../../Components/Input";
 import logoDesktop from "../../../assets/logoDesktop.png";
 
 export function SignUp() {
