@@ -38,7 +38,7 @@ export function SignUp() {
             <Button title={"Entrar"} />
           </div>
 
-          <a to="/register"> Já tenho uma conta</a>
+          <a href=""> Já tenho uma conta</a>
         </main>
       </Form>
     </Container>

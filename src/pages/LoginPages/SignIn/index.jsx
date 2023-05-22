@@ -28,10 +28,10 @@ export function SignIn() {
               placeholder="No mínimo 6 caracteres"
               id={"password"}
             />
-            // <Button title={"Entrar"} />
+            <Button title={"Entrar"} />
           </div>
 
-          <a to="/register"> Criar Conta</a>
+          <a href="">Criar conta</a>
         </main>
       </Form>
     </Container>
