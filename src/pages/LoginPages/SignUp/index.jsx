@@ -1,6 +1,6 @@
 import { Container, Form } from "./styles";
 import { FiMail, FiLock, FiUser } from "react-icons/fi";
-import { Button } from "../../../components/Button";
+//import { Button } from "../../../components/Button";
 import { Input } from "../../../components/Input";
 import logoDesktop from "../../../assets/logoDesktop.png";
 
@@ -35,7 +35,6 @@ export function SignUp() {
               placeholder="No mínimo 6 caracteres"
               id={"password"}
             />
-            <Button title={"Entrar"} />
           </div>
 
           <a to="/register"> Já tenho uma conta</a>
