@@ -12,7 +12,7 @@ export function SignUp() {
       </header>
       <Form>
         <main>
-          <h2>Faça o Login</h2>
+          <h2>Crie sua conta</h2>
           <div className="input-wrapper">
             <label htmlFor="name">Nome</label>
             <Input
@@ -38,7 +38,7 @@ export function SignUp() {
             <Button title={"Entrar"} />
           </div>
 
-          <a to="/register"> Criar Conta</a>
+          <a to="/register"> Já tenho uma conta</a>
         </main>
       </Form>
     </Container>
